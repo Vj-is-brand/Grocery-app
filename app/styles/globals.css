@@ -1,0 +1,159 @@
+/* General styles */
+body {
+  margin: 0;
+}
+p {
+  margin: 10px 0;
+}
+
+.bottomContainer {
+  padding: 20px;
+  margin: 20px;
+}
+
+.containerTitle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1,
+h3 {
+  margin: 0 0 2px;
+}
+
+.sepearator {
+  border-top: 1.5px dashed rgb(233, 233, 233);
+}
+
+/* Meal item styles */
+.mealItemsContainer {
+  width: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mealItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  flex: 1 1 calc(50% - 40px); /* Adjust width for flexibility */
+  box-sizing: border-box;
+}
+
+.mealItem img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 10px;
+}
+
+.mealDetails {
+  flex: 1;
+}
+
+.mealStyle,
+.mealDescription {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mealStyle span,
+.mealStyle p {
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.mealDescription span,
+.mealDescription p {
+  font-size: 14px;
+  color: #345e34;
+}
+
+/* Meal category button styles */
+.mealCategory {
+  margin-top: 16px;
+}
+
+.categoryWrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap onto new lines */
+  gap: 10px; /* Space between buttons */
+}
+
+.btn,
+.buttonActive {
+  margin-right: 6px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 300;
+}
+
+.btn {
+  background-color: #edebeb;
+}
+
+.buttonActive {
+  background-color: #345e34;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .bottomContainer {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .mealStyle span,
+  .mealStyle p {
+    font-size: 18px; /* Adjust font size for smaller devices */
+  }
+
+  .mealDescription span,
+  .mealDescription p {
+    font-size: 12px; /* Adjust font size for smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .bottomContainer {
+    padding: 5px;
+    margin: 5px;
+  }
+  .mealItem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mealItem img {
+    /* flex: 1; */
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .mealStyle span,
+  .mealStyle p {
+    font-size: 16px; /* Further adjust font size for smaller devices */
+  }
+
+  .mealDescription span,
+  .mealDescription p {
+    font-size: 10px; /* Further adjust font size for smaller devices */
+  }
+
+  .btn,
+  .buttonActive {
+    padding: 8px 16px; /* Adjust button padding for smaller devices */
+  }
+}
