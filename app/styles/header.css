@@ -87,15 +87,12 @@
   .connect {
     width: 40%;
   }
-  .connectText {
-    color: black;
-  }
   .headerIcons {
     display: none;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 522px) {
   .header {
     justify-content: flex-start;
     gap: 3vh;
@@ -105,6 +102,9 @@
     display: flex;
     font-weight: bolder;
     vertical-align: middle;
+  }
+  .connectText {
+    color: black;
   }
 
   .connect {
