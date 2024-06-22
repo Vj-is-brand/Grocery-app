@@ -9,7 +9,7 @@ const page = () => {
   const [activeCategory, setActiveCategory] = useState(null);
   const [meals, setMeals] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [resultPerPage, setResultPerPage] = useState(10);
+  const [resultPerPage, setResultPerPage] = useState(6);
 
   const myCategories = [
     "FRUITS AND VEGETABLES",
