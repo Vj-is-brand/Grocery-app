@@ -12,11 +12,11 @@ const HeroSection = () => {
               <h1 className="groceryTitle">
                 Buy Fresh And Organic Grocery Food
               </h1>
-              {/* <img
+              <img
                 className="groceryImage"
-                src="/asset/kiwi.jpeg"
+                src="/asset/singleMint-removebg-preview.png"
                 alt="Grocery Image"
-              /> */}
+              />
             </div>
             <p className="groceryDescription">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
