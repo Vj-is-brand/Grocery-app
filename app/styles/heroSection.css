@@ -1,6 +1,5 @@
 .container {
   display: flex;
-  /* height: 60vw; */
   height: 50%;
   width: 100%;
   background-color: transparent;
@@ -37,7 +36,6 @@
 
 .leaf {
   height: 15vw;
-  width: 20%;
   position: absolute;
   right: -5%;
   bottom: -10%;
@@ -155,7 +153,7 @@
   }
 }
 
-@media (max-width: 522px) {
+@media (max-width: 572px) {
   .leftContainer {
     width: 100%;
     /* height: auto; */
@@ -164,13 +162,17 @@
   .rightContainer {
     display: none;
   }
+  .groceryDescription {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #beabac;
+    overflow: hidden; /* Prevent content from overflowing the container */
+    text-overflow: ellipsis; /* Add ellipsis (...) to indicate overflow */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+  }
 
   .transparent-img {
-    width: 50%;
-    position: absolute;
-    right: 1%;
-    top: 50%;
-    max-width: 100%;
+    opacity: 0.6;
   }
 
   .section {
@@ -191,6 +193,14 @@
 @media (max-width: 372px) {
   .container {
     margin-bottom: 20px;
+  }
+
+  .leaf {
+    display: none;
+  }
+
+  .shopNowSection {
+    gap: 0;
   }
 
   .infoSection {
