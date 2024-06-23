@@ -1,6 +1,7 @@
 .container {
   display: flex;
-  height: 60vw;
+  /* height: 60vw; */
+  height: 50%;
   width: 100%;
   background-color: transparent;
   position: relative;
