@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  height: 80vw;
+  height: 60vw;
   width: 100%;
   background-color: transparent;
   position: relative;
@@ -9,7 +9,7 @@
 
 .leftContainer,
 .rightContainer {
-  height: 70vw;
+  height: 60vw;
 }
 
 .leftContainer {
@@ -154,10 +154,13 @@
 }
 
 @media (max-width: 522px) {
-  .leftContainer,
-  .rightContainer {
+  .leftContainer {
     width: 100%;
-    height: auto;
+    /* height: auto; */
+    height: 50vh;
+  }
+  .rightContainer {
+    display: none;
   }
 
   .transparent-img {
